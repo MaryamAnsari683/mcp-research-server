@@ -1,0 +1,16 @@
+Task: Build Your Own MCP Server
+
+GitHub repository description:
+A safe MCP server that exposes a persistent SQLite research-notes capability through typed tools, validation, and an end-to-end stdio client demo.
+
+Submission description:
+I built a Model Context Protocol (MCP) server that exposes a real persistent research-notes capability through three typed tools: save_note, search_notes, and get_saved_note. The server validates tool inputs, stores notes in a local SQLite database, and restricts all write access to its own data/notes.db file. It intentionally refuses arbitrary filesystem access, raw SQL, shell commands, network requests, credentials, and unrelated calendar operations. I also built a Python MCP client that connects over stdio, discovers the tools, and drives save/search/retrieve end to end. Automated tests cover persistence, searching, validation failures, and client result parsing.
+
+Screen recording command:
+.venv\Scripts\activate
+python demo_client.py
+
+Important:
+- Do not commit a real data/notes.db file.
+- The database is created automatically when the demo runs.
+- No API keys are required for this task.

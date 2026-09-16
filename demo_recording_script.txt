@@ -1,0 +1,11 @@
+SCREEN RECORDING SCRIPT
+
+1. Show the project folder in File Explorer or the terminal.
+2. In CMD run:
+   .venv\Scripts\activate
+   python demo_client.py
+3. Show the three available MCP tools.
+4. Show save_note returning a created note ID.
+5. Show search_notes returning the saved note.
+6. Show get_saved_note returning the full record.
+7. Say: "The MCP client connected to my server over stdio and used typed tools to create, search, and retrieve a persistent research note."
